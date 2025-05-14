@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Amandine';
+    background: url(background.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: brightness(50%);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header ul li {
+    display: inline-block;
+    position: absolute;
+}
+
+header ul li a {
+    display: flex;
+    font-size: 50px;
+    padding: 50px;
+    color: #fff;
+}
