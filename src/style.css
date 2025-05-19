@@ -1,30 +1,68 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
+    overflow-x: hidden;
 }
-
 body {
-    font-family: 'Amandine';
-    background: url(background.png) no-repeat;
+    min-height: 100vh;
+    background: url(img/utils/background.png) no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
     backdrop-filter: brightness(50%);
+    font-family: 'Amandine';
 }
-
-header {
-    background-color: rgba(0, 0, 0, 0);
+.navbar {
+    font-size: 30px;
 }
-
-header ul li {
-    display: inline-block;
-    position: absolute;
-}
-
-header ul li a {
+nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 100px;
+}
+.logo {
+    margin-right: auto;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-out;
+}
+.sidebar a {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;
+    transition: font-size 0.5s;
+}
+.sidebar a img {
+    scale: 1;
+    transition: scale 0.5s;
+}
+.sidebar a:hover {
     font-size: 50px;
-    padding: 50px;
-    color: #fff;
+}
+.sidebar a:hover img {
+    scale: 1.2;
 }
