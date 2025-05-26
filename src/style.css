@@ -43,9 +43,8 @@ nav a {
     width: 100%;
     z-index: 999;
     background-color: rgba(0, 0, 0, .5);
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     transition: 1s ease-out;
 }
@@ -65,4 +64,46 @@ nav a {
 }
 .sidebar a:hover img {
     scale: 1.2;
+}
+.headline {
+    height: 800px;
+    width: 100%;
+    /*border: 8px solid white;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    font-family: 'Tiempos Headline';
+    color: white;
+}
+.headline h1 {
+    font-size: 200px;
+}
+.headline i {
+    font-size: 100px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    border: 8px solid white;
+}
+.container .normal {
+    align-items: flex-start;
+    border: 8px solid red;
+    /*
+    height: 600px;
+    rajouter le fade de l'image vers la gauche
+    */
+}
+.container .reverse {
+    align-items: flex-end;
+    border: 8px solid blue;
+    /*
+    height: 600px;
+    rajouter le fade de l'image vers la droite
+    */
 }
