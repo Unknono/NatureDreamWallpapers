@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../../style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="../../../index.html"><img src="../../img/utils/logo.png" alt="ndw_logo" width="60" height="60"></a></li>
+            <li onclick=showSidebar()><a href="#"><img src="../../img/utils/menu.png" width="60"></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a><img src="../../img/utils/close.png" width="60"></a></li>
+            <li><a href="../wallpapers.html">Wallpapers</a></li>
+            <li><a href="../tutorials.html">Tutorials</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="#">Log In / Sign in</a></li>
+        </ul>
+    </nav>
+
+    <div class="headline">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="container">
+        <div class="content-block normal">
+            <img src="../../img/utils/categories/cave.jpg" alt="Cave Wallpaper">
+            <a href="../../img/utils/categories/cave.jpg" download class="download-btn" title="Download"></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../../img/utils/logo.png" alt="Nature Dream Wallpapers Logo" width="50" height="50">
+            </div>
+
+            <div class="footer-links">
+                <a href="https://github.com/Unknono/NatureDreamWallpapers" target="_blank" class="footer-doc">Documentation</a>
+                
+                <div class="footer-support">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="../tutorials.html">Tutorials</a></li>
+                        <li><a href="../contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Nature Dream Wallpapers. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const html = document.documentElement;
+
+        function showSidebar() {
+            sidebar.classList.add('open');
+            html.style.overflow = 'hidden';
+        }
+        function hideSidebar() {
+            sidebar.classList.remove('open');
+            html.style.overflow = '';
+        }
+    </script>
+</body>
+</html>
