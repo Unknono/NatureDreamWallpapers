@@ -2,7 +2,7 @@
 
 # === Configuration ===
 WEBSITE_URL="https://naturedreamwallpapers.com"   # Change to your public URL if needed
-LOG_FILE="/var/www/html/status.html"  # So it can be viewed via browser
+LOG_FILE="/var/www/html/admin.html"  # So it can be viewed via browser
 MAX_RESPONSE_TIME=2              # in seconds
 
 # === Timestamp ===

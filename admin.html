@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nature Dream Wallpapers | Admin Control Panel</title>
+    <style>
+        body { font-family: Arial; padding: 30px; background: #f0f0f0; }
+        h1 { color: #333; }
+        form { margin: 20px 0; }
+        button { padding: 10px 20px; font-size: 16px; margin: 5px; }
+        .legend { font-size: 14px; color: #666; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Website Admin Panel</h1>
+    <div class="legend">⚠️ These actions control your EC2 server. Use with caution!</div>
+    <form method="POST" action="admin.php">
+        <input type="password" name="admin_pass" placeholder="Admin password" required>
+        <br>
+        <br>
+        <button name="action" value="monitor">📊 Monitor Website</button>
+        <button name="action" value="reboot">🔄 Reboot Server</button>
+        <button name="action" value="shutdown">⏹️ Shutdown Server</button>
+    </form>
+</body>
+</html>
