@@ -10,9 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $script_map = [
-        "reboot" => "/var/www/html/src/bash/reboot_server.sh",
-        "shutdown" => "/var/www/html/src/bash/shutdown_server.sh",
-        "monitor" => "/var/www/html/src/bash/website_monitor.sh"
+        "reboot" => "/var/www/html/src/bash/reboot.sh",
+        "shutdown" => "/var/www/html/src/bash/shutdown.sh",
+        "monitor" => "/var/www/html/src/bash/monitor.sh"
     ];
 
     if (!array_key_exists($action, $script_map)) {
