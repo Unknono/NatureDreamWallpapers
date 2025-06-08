@@ -214,16 +214,6 @@ footer {
     align-items: center;
     gap: 5px;
 }
-.footer-doc {
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.footer-doc:hover {
-    text-decoration: underline;
-}
 .footer-support h4 {
     margin-bottom: 3px;
     font-size: 30px;
@@ -239,7 +229,7 @@ footer {
 .footer-support a {
     text-decoration: none;
     color: white;
-    font-size: 23px;
+    font-size: 16px;
 }
 .footer-support a:hover {
     text-decoration: underline;
