@@ -123,6 +123,7 @@ sudo mv admin.html ..
 sudo mv admin.php ..
 sudo mv LICENSE ..
 sudo mv README.md ..
+sudo mv website_documentation.md
 sudo mv src/ ..
 ```
 
