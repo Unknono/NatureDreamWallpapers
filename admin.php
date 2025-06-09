@@ -1,5 +1,5 @@
 <?php
-$PASSWORD = "Supercell15112005%"; // Change this!
+$PASSWORD = "jesuisunsingesousf1ltreriod3janeir0";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input_pass = $_POST['admin_pass'] ?? '';
